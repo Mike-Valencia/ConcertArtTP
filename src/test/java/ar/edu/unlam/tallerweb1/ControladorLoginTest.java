@@ -36,7 +36,7 @@ public class ControladorLoginTest {
     	//ejecuto
      	ModelAndView mav = controladorUsuario.verificarLogin(usuario.getEmail(),usuario.getPassword());
         //compruebo que me lleva a la vista correcta, siempre lleva a Iniciar Sesion que es la de error
-  	    assertThat(mav.getViewName()).isEqualTo("Inicio");
+  	    assertThat(mav.getViewName()).isEqualTo("IniciarSesion");
     }
  
 }
